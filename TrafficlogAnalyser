@@ -89,23 +89,13 @@ with open(filename) as f:
 listIp = remove_duplicates(searchIP())
 listRepo = remove_duplicates(searchRepo())
 listDate = remove_duplicates(searchDate())
-listComb = ipRepoComb(listIp,listRepo)
+#listComb = ipRepoComb(listIp,listRepo)
 
 repoUsage = repoUsage(listRepo)
 ipUsage = ipUsage(listIp)
 dateUsage = dateUsage(listDate)
-ipRepoUsage = ipRepoUsage(listComb)
+#ipRepoUsage = ipRepoUsage(listComb)
 
-
-#repoUsage(listRepo)
-#print (listIp)
-#print (listRepo)
-#print (listDate)
-#print (listComb)
-
-#print (repoUsage)
-#print (ipUsage)
-#print (ipRepoUsage)
 
 print("Below is the usage on each date:")
 print("###########################################################################################################")
@@ -119,8 +109,8 @@ print("Below is the usage per IP:")
 print("################################")
 pprint.pprint(ipUsage)
 print("################################")
-print("Below is the usage per IP and Repo:")
-print("################################")
-pprint.pprint(ipRepoUsage)
-print("################################")
+#print("Below is the usage per IP and Repo:")
+#print("################################")
+#pprint.pprint(ipRepoUsage)
+#print("################################")
 
